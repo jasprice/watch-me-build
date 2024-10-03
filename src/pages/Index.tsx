@@ -11,7 +11,7 @@ const Index = () => {
           </span>
           <h1 className="text-5xl font-bold mb-4">Join our Waitlist!</h1>
           <p className="text-lg mb-6">
-            Our YouTube Channel, "Watch Me Build It", is launching soon. Join our waitlist to be
+            Our YouTube Channel, "Watch Me Build It", is launching soon. <br></br>Join our waitlist to be
             notified when we launch. Stay tuned!
           </p>
           <p className="text-sm">
