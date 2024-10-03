@@ -3,16 +3,28 @@ import EmailCaptureForm from '@/components/EmailCaptureForm';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600">
-      <div className="max-w-md w-full px-6 py-8 bg-white rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
-          Get Notified When We Launch!
-        </h1>
-        <p className="text-center text-gray-600 mb-8">
-          Be the first to know when our exciting new channel goes live. Sign up now!
-        </p>
+    <div className="min-h-screen flex items-center justify-center bg-[#1a1a2e] text-white">
+      <div className="max-w-2xl w-full px-6 py-8">
+        <div className="mb-8 text-center">
+          <span className="inline-block px-4 py-2 bg-[#2d2d4a] rounded-full text-sm mb-6">
+            Launching Soon!
+          </span>
+          <h1 className="text-5xl font-bold mb-4">Join our Waitlist!</h1>
+          <p className="text-lg mb-6">
+            Our YouTube Channel is launching soon. Join our waitlist to be
+            notified when we launch. Stay tuned!
+          </p>
+          <p className="text-sm">
+            For those who would like to be featured, drop us an{' '}
+            <a href="mailto:contact@example.com" className="underline">
+              email
+            </a>{' '}
+            so we can get you scheduled.
+          </p>
+        </div>
         <EmailCaptureForm />
       </div>
+      <div className="absolute inset-0 bg-[url('/network-bg.png')] opacity-10 z-0"></div>
     </div>
   );
 };
