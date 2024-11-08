@@ -16,7 +16,7 @@ const Index = () => {
           </p>
           <p className="text-sm">
             For those who would like to be featured, drop us an{' '}
-            <a href="mailto:contact@example.com" className="underline">
+            <a href="mailto:pricedigitalventures@gmail.com" className="underline">
               email
             </a>{' '}
             so we can get you scheduled.
