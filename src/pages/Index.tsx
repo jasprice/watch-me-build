@@ -13,7 +13,7 @@ const Index = () => {
           <p className="text-lg mb-6">
             Discover how creators bring their digital products to life! From websites and apps to designs 
             and videos, we showcase the unique creative processes behind the scenes. <br></br><br></br>
-            Join us to explore how different creators build and shape their digital world.
+            Join us to explore how different creators build and shape the digital world.
           </p>
         </div>
         <EmailCaptureForm />
