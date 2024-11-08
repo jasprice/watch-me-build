@@ -4,7 +4,7 @@ import EmailCaptureForm from '@/components/EmailCaptureForm';
 const Index = () => {
   return (
     <div className="min-h-screen flex items-start pt-20 justify-center bg-[#1a1a2e] text-white">
-      <div className="max-w-2xl w-full px-6 py-8">
+      <div className="max-w-4xl w-full px-6 py-8">
         <div className="mb-8 text-center">
           <span className="inline-block px-4 py-2 bg-[#2d2d4a] rounded-full text-sm mb-12">
             Launching Soon!
