@@ -11,8 +11,9 @@ const Index = () => {
           </span>
           <h1 className="text-5xl font-bold mb-4">Join our Waitlist!</h1>
           <p className="text-lg mb-6">
-            Our YouTube Channel, "Watch Me Build It", is launching soon. <br></br>Join our waitlist to be
-            notified when we launch. Stay tuned!
+            Discover how creators bring their digital products to life! From websites and apps to designs 
+            and videos, we showcase the unique creative processes behind the scenes. <br></br>
+            Join us to explore how different creators build and shape their digital world.
           </p>
           <p className="text-sm">
             For those who would like to be featured, drop us an{' '}
