@@ -16,7 +16,7 @@ const EmailCaptureForm = () => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-xl mx-auto">
       <form onSubmit={handleSubmit} className="flex space-x-2">
         <Input
           type="email"
