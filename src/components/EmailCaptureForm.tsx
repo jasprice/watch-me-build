@@ -16,19 +16,21 @@ const EmailCaptureForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex space-x-2">
-      <Input
-        type="email"
-        placeholder="your@email.com"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-        className="flex-grow bg-[#2d2d4a] border-none text-white placeholder-gray-400"
-      />
-      <Button type="submit" className="bg-white text-black hover:bg-gray-200">
-        Join Waitlist <ArrowRight className="ml-2 h-4 w-4" />
-      </Button>
-    </form>
+    <div className="max-w-2xl mx-auto">
+      <form onSubmit={handleSubmit} className="flex space-x-2">
+        <Input
+          type="email"
+          placeholder="your@email.com"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+          className="flex-grow bg-[#2d2d4a] border-none text-white placeholder-gray-400"
+        />
+        <Button type="submit" className="bg-white text-black hover:bg-gray-200">
+          Join Waitlist <ArrowRight className="ml-2 h-4 w-4" />
+        </Button>
+      </form>
+    </div>
   );
 };
 
