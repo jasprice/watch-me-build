@@ -17,15 +17,17 @@ const Index = () => {
           </p>
         </div>
         <EmailCaptureForm />
-      </div>
-      <div className="absolute inset-0 bg-[url('/network-bg.png')] opacity-10 z-0"></div>
-          <p className="text-sm">
+        <div className="text-center mt-6">
+          <p className="text-sm text-gray-400">
             For those who would like to be featured, drop us an{' '}
             <a href="mailto:pricedigitalventures@gmail.com" className="underline">
               email
             </a>{' '}
             so we can get you scheduled.
-          </p>    
+          </p>
+        </div>
+      </div>
+      <div className="absolute inset-0 bg-[url('/network-bg.png')] opacity-10 z-0"></div>
     </div>
   );
 };
