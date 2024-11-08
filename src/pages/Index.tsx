@@ -17,6 +17,7 @@ const Index = () => {
             Join us to explore how different creators build and shape the digital world.
           </p>
         </div>
+        <br></br>
         <EmailCaptureForm />
         <div className="text-center mt-6">
           <p className="text-sm text-gray-400">
