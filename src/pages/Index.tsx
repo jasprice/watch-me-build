@@ -12,7 +12,7 @@ const Index = () => {
           <h1 className="text-5xl font-bold mb-4">Join our Waitlist!</h1>
           <br></br><br></br>
           <p className="text-lg mb-6">
-            Discover how creators bring their digital products to life! From websites and apps to designs 
+            Discover how creators bring their digital products to life! &nbsp;&nbsp;From websites and apps to designs 
             and videos, we showcase the unique creative processes behind the scenes. <br></br><br></br>
             Join us to explore how different creators build and shape the digital world.
           </p>
