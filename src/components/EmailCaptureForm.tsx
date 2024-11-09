@@ -9,8 +9,13 @@ const EmailCaptureForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the email to your backend
-    console.log('Email submitted:', email);
+    
+    // Open email client with pre-filled details
+    const subject = encodeURIComponent('New Waitlist Signup');
+    const body = encodeURIComponent(`New signup from: ${email}`);
+    window.location.href = `mailto:pricedigitalventures@gmail.com?subject=${subject}&body=${body}`;
+    
+    // Show success message
     toast.success('Thank you for joining our waitlist! We\'ll notify you when we launch.');
     setEmail('');
   };
