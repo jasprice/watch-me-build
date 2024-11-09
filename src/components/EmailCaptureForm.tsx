@@ -20,7 +20,7 @@ const EmailCaptureForm = () => {
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
-          email: email, // This should match the template variable in EmailJS
+          from_email: email, // Updated to match the template variable
         }
       );
 
