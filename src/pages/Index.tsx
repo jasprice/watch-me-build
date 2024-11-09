@@ -2,6 +2,13 @@ import React from 'react';
 import EmailCaptureForm from '@/components/EmailCaptureForm';
 
 const Index = () => {
+  const emailSubject = encodeURIComponent("Watch Me Build It Creator Request");
+  const emailBody = encodeURIComponent(
+    "Please describe your project with as much detail as you can or provide a link to your app, website, design, video, etc. so we can verify your project. We will get back to your shortly!\n\n" +
+    "Thank you for your submission!\n\n" +
+    "P.S. We would love for you to share with your other creator friends and colleagues in order to get a diverse group of creators in on the project. Please forward the website link to them."
+  );
+
   return (
     <div className="min-h-screen flex items-start pt-20 justify-center bg-[#1a1a2e] text-white">
       <div className="max-w-4xl w-full px-6 py-8">
@@ -23,7 +30,7 @@ const Index = () => {
           <p className="text-sm text-gray-400">
             For those who would like to be featured,{' '}
             <a 
-              href="mailto:pricedigitalventures@gmail.com"
+              href={`mailto:pricedigitalventures@gmail.com?subject=${emailSubject}&body=${emailBody}`}
               className="text-blue-400 hover:text-blue-300 underline"
             >
               drop us an email
