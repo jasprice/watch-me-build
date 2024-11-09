@@ -16,14 +16,17 @@ const EmailCaptureForm = () => {
       emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
       
       // Send email using EmailJS
-      await emailjs.send(
+      const result = await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
-          from_email: email, // Updated to match the template variable
+          from_email: email,
+          message: `New waitlist signup from: ${email}`,
         }
       );
 
+      console.log('Email sent successfully:', result);
+      
       // Show success message
       toast.success('Thank you for joining our waitlist! We\'ll notify you when we launch.');
       setEmail('');
