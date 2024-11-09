@@ -22,8 +22,7 @@ const Index = () => {
         <div className="text-center mt-6">
           <p className="text-sm text-gray-400">
             For those who would like to be featured, 
-            <a 
-              href="mailto:pricedigitalventures@gmail.com">
+            <a href="mailto:pricedigitalventures@gmail.com">
               drop us an email
             </a>
             so we can get you scheduled.
