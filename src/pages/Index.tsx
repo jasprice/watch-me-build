@@ -29,10 +29,6 @@ const Index = () => {
             For those who would like to be featured,{' '}
             <a 
               href={mailtoLink}
-              onClick={(e) => {
-                e.preventDefault();
-                window.location.href = mailtoLink;
-              }}
               className="text-blue-400 underline cursor-pointer hover:text-blue-300 font-medium"
             >
               drop us an email
