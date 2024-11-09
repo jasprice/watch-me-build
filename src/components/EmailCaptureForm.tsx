@@ -20,9 +20,7 @@ const EmailCaptureForm = () => {
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
-          to_email: "pricedigitalventures@gmail.com",
-          from_email: email,
-          message: `New waitlist signup from: ${email}`,
+          email: email, // This should match the template variable in EmailJS
         }
       );
 
