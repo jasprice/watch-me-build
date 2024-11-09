@@ -19,12 +19,12 @@ const Index = () => {
         </div>
         <br></br>
         <EmailCaptureForm />
-        <div className="text-center mt-6">
+        <div className="text-center mt-6 relative z-10">
           <p className="text-sm text-gray-400">
             For those who would like to be featured,{' '}
             <a 
               href="mailto:pricedigitalventures@gmail.com"
-              className="text-blue-400 hover:text-blue-300 underline cursor-pointer inline-block"
+              className="text-blue-400 hover:text-blue-300 underline"
             >
               drop us an email
             </a>{' '}
