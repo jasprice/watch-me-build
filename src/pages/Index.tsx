@@ -23,7 +23,7 @@ const Index = () => {
           <p className="text-sm text-gray-400">
             For those who would like to be featured,{' '}
             <a 
-              href="mailto:pricedigitalventures@gmail.com?subject=Watch%20Me%20Build%20It%20Creator%20Request&body=Please%20describe%20your%20project%20with%20as%20much%20detail%20as%20you%20can%20or%20provide%20a%20link%20to%20your%20app%2C%20website%2C%20design%2C%20video%2C%20etc.%20so%20we%20can%20verify%20your%20project.%0A%0AWe%20will%20get%20back%20to%20you%20shortly!"
+              href="mailto:pricedigitalventures@gmail.com"
               className="text-blue-400 underline cursor-pointer hover:text-blue-300 font-medium"
             >
               drop us an email
