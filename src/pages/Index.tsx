@@ -27,7 +27,7 @@ const Index = () => {
             For those who would like to be featured, drop us an{' '}
             <a 
               href={`mailto:pricedigitalventures@gmail.com?subject=${emailSubject}&body=${emailBody}`}
-              className="underline hover:text-white transition-colors"
+              className="text-blue-400 underline cursor-pointer hover:text-blue-300 font-medium"
             >
               email
             </a>{' '}
