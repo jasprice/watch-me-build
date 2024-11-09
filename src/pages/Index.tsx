@@ -5,6 +5,8 @@ const Index = () => {
   const emailSubject = "Watch Me Build It Creator Request";
   const emailBody = "Please describe your project with as much detail as you can or provide a link to your app, website, design, video, etc. so we can verify your project.\n\nWe will get back to you shortly!";
   
+  const mailtoLink = `mailto:pricedigitalventures@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+  
   return (
     <div className="min-h-screen flex items-start pt-20 justify-center bg-[#1a1a2e] text-white">
       <div className="max-w-4xl w-full px-6 py-8">
@@ -24,12 +26,16 @@ const Index = () => {
         <EmailCaptureForm />
         <div className="text-center mt-6">
           <p className="text-sm text-gray-400">
-            For those who would like to be featured, drop us an{' '}
+            For those who would like to be featured,{' '}
             <a 
-              href={`mailto:pricedigitalventures@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`}
+              href={mailtoLink}
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = mailtoLink;
+              }}
               className="text-blue-400 underline cursor-pointer hover:text-blue-300 font-medium"
             >
-              email
+              drop us an email
             </a>{' '}
             so we can get you scheduled.
           </p>
