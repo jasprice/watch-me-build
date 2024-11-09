@@ -23,11 +23,9 @@ const Index = () => {
           <p className="text-sm text-gray-400">
             For those who would like to be featured,{' '}
             <a 
-              href="mailto:pricedigitalventures@gmail.com"
-              className="text-blue-400 hover:text-blue-300 underline"
-            >
+              href="mailto:pricedigitalventures@gmail.com">
               drop us an email
-            </a>{' '}
+            </a>
             so we can get you scheduled.
           </p>
         </div>
