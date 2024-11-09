@@ -3,16 +3,36 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { toast } from 'sonner';
 import { ArrowRight } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const EmailCaptureForm = () => {
   const [email, setEmail] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the email to your backend
-    console.log('Email submitted:', email);
-    toast.success('Thank you for joining our waitlist! We\'ll notify you when we launch.');
-    setEmail('');
+    
+    try {
+      // Initialize EmailJS with your public key
+      emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual public key
+      
+      // Send email using EmailJS
+      await emailjs.send(
+        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
+        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+        {
+          to_email: "pricedigitalventures@gmail.com",
+          from_email: email,
+          message: `New waitlist signup from: ${email}`,
+        }
+      );
+
+      // Show success message
+      toast.success('Thank you for joining our waitlist! We\'ll notify you when we launch.');
+      setEmail('');
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast.error('There was an error joining the waitlist. Please try again.');
+    }
   };
 
   return (
